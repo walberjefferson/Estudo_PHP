@@ -4,11 +4,6 @@ namespace Classe;
 
 class Carro {
 
-    #public $cor;
-    #public $ano;
-    #public $modelo;
-    #public $fabricante;
-    
     public function __construct($cor, $ano, $modelo, $fabricante) {
         $this->fabricante = $fabricante;
         $this->modelo = $modelo;
