@@ -4,14 +4,21 @@ namespace Classe;
 
 class Carro {
 
-    public $cor;
-    public $ano;
-    public $modelo;
-    public $fabricante;
+    #public $cor;
+    #public $ano;
+    #public $modelo;
+    #public $fabricante;
+    
+    public function __construct($cor, $ano, $modelo, $fabricante) {
+        $this->fabricante = $fabricante;
+        $this->modelo = $modelo;
+        $this->ano = $ano;
+        $this->cor = $cor;
+    }
 
     public function constroiCarro() {
-        $texto = 'Meu carro foi fabricado por ' . $this->fabricante . ' e é do modelo '
-                . $this->modelo . ' feito no ano de ' . $this->ano . ' na cor ' . $this->cor . '.';
+        $texto = 'Meu carro foi fabricado pela <b>' . $this->fabricante . '</b> e é do modelo <b>'
+                . $this->modelo . '</b> feito no ano de <b>' . $this->ano . '</b> na cor <b>' . $this->cor . '</b>.';
         return $texto;
     }
 
