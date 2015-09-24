@@ -25,10 +25,10 @@ function teste2($x){
 function switch($x){
 	switch ($x) {
 		case 1:
-			# code...
 			break;
 		case 2 :
-
+			$x
+			break
 		case 3 :
 			return true; 
 	}

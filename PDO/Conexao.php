@@ -5,7 +5,7 @@ class Conexao {
 	public function connect()
 	{
 		try{
-			$conexao = new PDO('mysql:host=localhost;dbname=ao_vivos', 'root', '');
+			$conexao = new PDO('mysql:host=localhost;dbname=ss', 'root', 'root');
 			return $conexao;
 		}catch(PDOException $e){
 			echo "Erro ao se conectar: " . $e->getMessage();
